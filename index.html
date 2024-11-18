@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background: #d7e9f5;
+    }
+
+    .topnav {
+      display: in-line block;
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+      list-style: none;
+      font-family: "Lato", sans-serif;
+      font-weight: 200;
+      margin: 0;
+      white-space: nowrap;
+      overflow: auto;
+      color: #7fbadc;
+      border: white solid 2px;
+      border: 1px, solid transparent;
+      background-color: #7fbadc;
+    }
+
+    .topnav a {
+      position: relative;
+      top: -12px;
+      right: 10px;
+      float: right;
+      color: white;
+      border: 1px solid transparent;
+      text-align: center;
+      padding: 16px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: 200ms ease;
+      font-family: "Lato", sans-serif;
+      margin: 2px;
+      letter-spacing: 3px;
+    }
+
+    .topnav a:hover {
+      color: #68aac4;
+      border-radius: 30px;
+      border: #68aac4 solid 1px;
+      background-color: white;
+    }
+
+    h5 {
+      color: black;
+      font-weight: 100;
+      font-family: "Lato", sans-serif;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      font-size: 22px;
+      color: #506e69;
+      letter-spacing: 3px;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      font-size: 16px;
+      color: #7a8e82;
+      letter-spacing: 2px;
+    }
+
+    .btn {
+      float: left;
+      display: inline-block;
+      border: none;
+      color: white;
+      position: absolute;
+      padding: 10px;
+      top: -12px;
+      left: 30px;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 50px;
+      color: white;
+      background-color: #68aac4;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 30px;
+      transition: 300ms ease;
+      letter-spacing: 3px;
+    }
+
+    .button:hover {
+      color: #68aac4;
+      border: #68aac4 solid 1px;
+      background-color: white;
+    }
+    .imagecenter {
+      padding-top: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    .column {
+			float: left;
+			width: 45%;
+			margin-bottom: 16px;
+			padding: 0 8px;
+		}
+
+		div.margin {
+			margin: 0 auto;
+			display: block;
+		}
+    
+		@media screen and (max-width: 650px) {
+			.column {
+				width: 100%;
+				display: block;
+			}
+		}
+
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			background: white;
+		}
+
+		.row {
+			position: absolute;
+			left: 90px;
+			top: 350px;
+      padding-top: 550px;
+      padding-bottom: 20px;
+		}
+
+		.container {
+			padding: 0 16px;
+			height: 300px;
+		}
+
+		div {
+			background-color: none;
+		}
+
+		.container::after,
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+    #meetteam {
+      text-align: center;
+    }
+    
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2>
+    <div class="topnav">
+      <ul>
+        <p onclick="window.location.href='index.html';" style="text-align:left" class="btn"><img src="logo.png"
+            id="logo" alt="logo1" style="width:25%; height: 25%"></p>
+      </ul>
+      <a href="contact.html">Contact Us</a>
+      <a href="shellstation.html">Shell Station</a>
+      <a class="active" href="index.html">Home</a>
+    </div>
+    <img class="imagecenter" src="shellhome.png" style="width:40%"/>
+     <br>
+    <p style="text-align: center; margin-left: 50px; margin-right: 50px;">Welcome to Shell Station! This is a website designed to provide a space for everyone to push themselves to "get out of their shell" and experience things outside of their comfort zone. This includes a space to make the most of one's comfort zone, and ensuring quality experience both within and outside of one's comfort zone. Shell Station is divided into a "Coming out of your Shell" section and a "Staying in your Shell" section. Each of these sections are based on point and goal-based systems with timers, journals, ranges of difficulty, and random experiences in order to maximize user experience while at the Shell Station!</p>
+    <br>
+    <h5 id="meetteam" style="text-align:center; font-size: 50px;">Meet The Team</h5>
+		<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+		<div class="meettheteam">
+			<div class="row">
+				<div class="column">
+					<div class="card">
+						<img src="woojin.png" alt="Woojin" style="width:100%">
+						<div class="container">
+              <br>
+							<h2>Woojin</h2>
+							<p class="title">Web Developer</p>
+							<p>Woojin is a sophomore in high school that participates in student council as treasurer and programs for his school's robotics team.</p>
+							<br>
+							<p class="contact" onclick="window.location.href='contact.html';"><button class="button">Contact</button></p>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<img src="shannon.png" alt="Shannon" style="width:100%">
+						<div class="container">
+              <br>
+							<h2>Shannon</h2>
+							<p class="title">Web Developer</p>
+							<p>Shannon is a senior in high school that programs for her school's robotics team and enjoys hanging out with friends.</p>
+							<br>
+							<p class="contact" onclick="window.location.href='contact.html';"><button class="button">Contact</button></p>
+						</div>
+					</div>
+				</div>
+    </div>
+  </div>
+
+<br>
+<br>
+<br> 
+<br>
+<br>
+<br> 
+<br>
+<br>
+<br> 
+    <script src="script.js"></script>
+</body>
+
+</html>

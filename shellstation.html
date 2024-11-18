@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background: #d7e9f5;
+    }
+
+
+    .topnav {
+      display: in-line block;
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+      list-style: none;
+      font-family: "Lato", sans-serif;
+      font-weight: 200;
+      margin: 0;
+      white-space: nowrap;
+      overflow: auto;
+      color: #7fbadc;
+      border: white solid 2px;
+      border: 1px, solid transparent;
+      background-color: #7fbadc;
+    }
+
+    .topnav a {
+      position: relative;
+      top: -12px;
+      right: 10px;
+      float: right;
+      color: white;
+      text-align: center;
+      border: 1px solid transparent;
+      padding: 16px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: 200ms ease;
+      font-family: "Lato", sans-serif;
+      letter-spacing: 3px;
+    }
+
+    .topnav a:hover {
+      color: #68aac4;
+      border-radius: 30px;
+      border: #68aac4 solid 1px;
+      background-color: white;
+    }
+
+    h5 {
+      color: black;
+      font-weight: 100;
+      font-family: "Lato", sans-serif;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      font-size: 22px;
+      color: #506e69;
+      letter-spacing: 3px;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      font-size: 16px;
+      color: #7a8e82;
+      letter-spacing: 2px;
+    }
+
+    .btn {
+      float: left;
+      display: inline-block;
+      border: none;
+      color: white;
+      position: absolute;
+      padding: 10px;
+      top: -12px;
+      left: 30px;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 50px;
+      color: white;
+      background-color: #68aac4;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 30px;
+      transition: 300ms ease;
+      letter-spacing: 3px;
+    }
+
+    .button:hover {
+      color: #9cad88;
+      border: #9cad88 solid 1px;
+      background-color: white;
+    }
+
+      {
+      box-sizing: border-box;
+    }
+    .row {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      width: 90%;
+    }
+    .column {
+      float: left;
+      width: 50%;
+      padding-top: 50px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    @media screen and (max-width: 500px) {
+      .column {
+        width: 100%;
+      }
+    }
+
+    #welcomeimg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      padding-top: 50px;
+    }
+
+    #logo {
+      border: #b6d5eb solid 5px;
+      
+    }
+
+    #logo1 {
+      border: #b6d5eb solid 5px;
+      margin-left:50px;
+    }
+
+    #logo:hover {
+      color: #68aac4;
+      border: #68aac4 solid 5px;
+      background-color: white;
+    }
+
+    #logo1:hover {
+      color: #68aac4;
+      border: #68aac4 solid 5px;
+      background-color: white;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2>
+    <div class="topnav">
+      <ul>
+        <p onclick="window.location.href='index.html';" style="text-align:left" class="btn"><img src="logo.png"
+            id="logo3" alt="logo1" style="width:25%; height: 25%"></p>
+
+      </ul>
+      <a href="contact.html">Contact Us</a>
+      <a href="shellstation.html">Shell Station</a>
+      <a class="active" href="index.html">Home</a>
+    </div>
+    <img src="welcome.png" id="welcomeimg">
+     <p style="text-align: center; margin-left: 50px; margin-right: 50px;">Welcome! This is the Shell Station that helps you come out of your shell while providing opportunities to make the most of your comfort zone. Coming out of your Shell is the section that allows you to define your goals of getting out of your comfort zone and providing personally-customized ranges of difficulty according to user input. For the sake of enhancing productivity and ensuring maximum comfort, you are given a personalized time limit for you to complete your goal. When you complete your goal, you are rewarded 1 point for easy level, 2 points for medium level, and 3 points for hard level. At the end, you are given a space to reflect on your experiences which is extremely useful for future experiences in getting out of your comfort zone! Staying in the Shell is the section that is the "recharging station." This is where you are able to use the points that you earn to "recharge" and become comfortable enough to get out of your comfort zone again! For every point used, you are able to receive 30 minutes to maximize your comfort within your comfort zone. For the sake of ensuring a productive your experience, you will be striving to meet a personal goal within the given "break" to make the most of your comfort zone. If you wish to get out of your comfort zone or make the most of staying in it, but don't know how, Shell Station can provide some ideas through our built in randomized generator! Please enjoy our wide selection of fish puns as well! </p>
+    <div class="row">
+      <div class="column">
+        <p onclick="window.location.href='outshell.html';"><img src="outshell.png" id="logo" alt="logo2"
+            style="width:90%; height:90%"></p>
+      </div>
+      <div class="column">
+        <p onclick="window.location.href='inshell.html';"><img src="inshell.png" id="logo1" alt="logo4"
+            style="width:90%; height: 90%"></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="script.js"></script>
+</body>
+
+</html>

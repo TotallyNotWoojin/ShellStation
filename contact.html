@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background: #d7e9f5;
+    }
+
+    .topnav {
+      display: in-line block;
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+      list-style: none;
+      font-family: "Lato", sans-serif;
+      font-weight: 200;
+      margin: 0;
+      white-space: nowrap;
+      overflow: auto;
+      color: #7fbadc;
+      border: white solid 2px;
+      border: 1px, solid transparent;
+      background-color: #7fbadc;
+    }
+
+    .topnav a {
+      position: relative;
+      top: -12px;
+      right: 10px;
+      float: right;
+      color: white;
+      text-align: center;
+      border: 1px solid transparent;
+      padding: 16px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: 200ms ease;
+      font-family: "Lato", sans-serif;
+      margin: 2px;
+      letter-spacing: 3px;
+    }
+
+    .topnav a:hover {
+      color: #68aac4;
+      border-radius: 30px;
+      border: #68aac4 solid 1px;
+      background-color: white;
+    }
+
+    h5 {
+      color: black;
+      font-weight: 100;
+      font-family: "Lato", sans-serif;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      font-size: 22px;
+      color: #506e69;
+      letter-spacing: 3px;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      font-size: 16px;
+      color: #7a8e82;
+      letter-spacing: 2px;
+    }
+
+    .btn {
+      float: left;
+      display: inline-block;
+      border: none;
+      color: white;
+      position: absolute;
+      padding: 10px;
+      top: -12px;
+      left: 30px;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 50px;
+      color: white;
+      background-color: #68aac4;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 30px;
+      transition: 300ms ease;
+      letter-spacing: 3px;
+    }
+    .imagecenter {
+      padding-top: 60px;
+      padding-bottom: 30px;
+      margin: auto;
+      display: block;
+      width: 50%;
+    }
+    .button:hover {
+      color: #9cad88;
+      border: #9cad88 solid 1px;
+      background-color: white;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical
+    }
+
+    input[type=submit] {
+      background-color: #68aac4;
+      border: none;
+      color: white;
+      padding: 12px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      font-family: "Lato", sans-serif;
+      transition: all 300ms ease;
+      border-radius: 33px;
+      letter-spacing: 3px;
+      font-weight: 100;
+    }
+
+    label {
+      font-family: "Lato", sans-serif;
+      letter-spacing: 3px;
+      color: white;
+      font-size: 22px;
+    }
+
+    input[type=submit]:hover {
+      color: white;
+      transform: scale(1.2)
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #7fbadc;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      padding: 20px;
+      font-family: "Lato", sans-serif;
+    }
+
+    #submit {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 50px;
+      color: #7fbadc;
+      background-color: white;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-family: "Lato", sans-serif;
+      border-radius: 30px;
+      transition: 300ms ease;
+      letter-spacing: 3px;
+    }
+
+    #submit:hover {
+      color: white;
+      border: none;
+      text-color: #7fbadc;
+      background-color: #d7e9f5;
+    }
+
+    form {
+      font-color: white;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2>
+    <div class="topnav">
+      <ul>
+        <p onclick="window.location.href='index.html';" style="text-align:left" class="btn"><img src="logo.png"
+            id="logo" alt="logo1" style="width:25%; height: 25%"></p>
+      </ul>
+      <a href="contact.html">Contact Us</a>
+      <a href="shellstation.html">Shell Station</a>
+      <a class="active" href="index.html">Home</a>
+    </div>
+    <img class="imagecenter" src="contact.png" style="width:40%"/>
+    <div contacts>
+    </div>
+    <div class="container">
+      <form action='/survey/checkout' method='post' enctype="multipart/form-data">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="usa">USA</option>
+          <option value="mexico">Mexico</option>
+          <option value="australia">Australia</option>
+          <option value="china">China</option>
+          <option value="canada">Canada</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject"
+          placeholder="Write any questions, comments, or notes for the creators of Shell Station!"
+          style="height:200px"></textarea>
+        <input type='hidden' name='redirecturl' value='survey'>
+        <input type='hidden' name='survey' value='HIHIHI'>
+      </form>
+      <br>
+      <button id='submit' onclick="location.href = 'submission.html';">Submit</button>
+      <br>
+      <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="script.js"></script>
+</body>
+
+</html>

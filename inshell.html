@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background: #d7e9f5;
+    }
+
+    .topnav {
+      display: in-line block;
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+      list-style: none;
+      font-family: "Lato", sans-serif;
+      font-weight: 200;
+      margin: 0;
+      white-space: nowrap;
+      overflow: auto;
+      color: #7fbadc;
+      border: white solid 2px;
+      border: 1px, solid transparent;
+      background-color: #7fbadc;
+    }
+
+    .topnav a {
+      position: relative;
+      top: -12px;
+      right: 10px;
+      float: right;
+      color: white;
+      border: 1px solid transparent;
+      text-align: center;
+      padding: 16px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: 200ms ease;
+      font-family: "Lato", sans-serif;
+      margin: 2px;
+      letter-spacing: 3px;
+    }
+
+    .topnav a:hover {
+      color: #68aac4;
+      border-radius: 30px;
+      border: #68aac4 solid 1px;
+      background-color: white;
+    }
+
+    h5 {
+      color: black;
+      font-weight: 100;
+      font-family: "Lato", sans-serif;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      font-size: 22px;
+      color: #506e69;
+      letter-spacing: 3px;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      font-size: 16px;
+      color: #7a8e82;
+      letter-spacing: 2px;
+    }
+
+    .btn {
+      float: left;
+      display: inline-block;
+      border: none;
+      color: white;
+      position: absolute;
+      padding: 10px;
+      top: -12px;
+      left: 30px;
+    }
+
+    button {
+      border: none;
+      outline: 0;
+      display: block;
+      margin: auto;
+      padding: 10px 30px;
+      color: white;
+      background-color: #68aac4;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: 300ms ease;
+      letter-spacing: 3px;
+    }
+
+    button:hover {
+      color: #68aac4;
+      border: #68aac4 solid 1px;
+      background-color: white;
+    }
+
+    #inputArea1 {
+      border: none;
+      outline: 0;
+      display: block;
+      margin: auto;
+      padding: 10px 30px;
+      color: white;
+      background-color: #68aac4;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 80px;
+      transition: 300ms ease;
+      letter-spacing: 3px;
+    }
+
+    #inputArea1:hover {
+      color: #68aac4;
+      border: #68aac4 solid 1px;
+      background-color: white;
+    }
+
+    h1.timer {
+      text-align: center;
+      font-size: 70px;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 40px font-family: "Lato", sans-serif;
+      font-weight: 100;
+    }
+
+    .align {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      text-align: center;
+    }
+
+    #one:hover {
+      background-color: white;
+      border: white solid 2px;
+      color: black;
+      cursor: pointer;
+    }
+
+    #complete:hover {
+      background-color: white;
+      border: white solid 2px;
+      color: black;
+      cursor: pointer;
+    }
+
+    #back:hover {
+      background-color: white;
+      border: white solid 2px;
+      color: black;
+      cursor: pointer;
+
+    }
+
+    #pointsUsed {
+      border: #68aac4 solid 1px;
+      outline: 0;
+      color: #68aac4;
+      background-color: white;
+      text-align: center;
+      cursor: pointer;
+      padding: 10px 20px;
+      transition: 300ms ease;
+      letter-spacing: 3px;
+      border-radius: 33px;
+      font-size: 16px;
+      position: relative;
+      top: -5px;
+    }
+
+    #goalstatement {
+      border: #68aac4 solid 1px;
+      outline: 0;
+      color: #68aac4;
+      background-color: white;
+      text-align: center;
+      cursor: pointer;
+      padding: 10px 20px;
+      transition: 300ms ease;
+      letter-spacing: 3px;
+      border-radius: 33px;
+      font-size: 16px;
+      position: relative;
+      top: -5px;
+    }
+    #goalstatement1 {
+      border: #68aac4 solid 1px;
+      outline: 0;
+      color: #68aac4;
+      background-color: white;
+      text-align: center;
+      cursor: pointer;
+      padding: 10px 20px;
+      transition: 300ms ease;
+      letter-spacing: 3px;
+      border-radius: 33px;
+      font-size: 16px;
+      position: relative;
+      top: -5px;
+    }
+
+    .imagecenter {
+      padding-top: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical
+    }
+
+    input[type=submit] {
+      background-color: #ffc97d;
+      border: none;
+      color: black;
+      padding: 12px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      font-family: "Lato", sans-serif;
+      transition: all 300ms ease;
+      border-radius: 33px;
+      letter-spacing: 3px;
+      font-weight: 100;
+    }
+
+    .totalscore {
+      margin-left: 2%;
+      position: absolute;
+      top: 103px;
+    }
+
+    #totalScore {
+      margin-left: 15%;
+      position: absolute;
+      top: 103px;
+    }
+
+    .random {
+      display: block;
+      margin: auto;
+      width: 50%;
+    }
+
+    h4.timer,
+    h5.timer {
+      text-align: center;
+      font-size: 70px;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 40px font-family: "Lato", sans-serif;
+      font-weight: 100;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2>
+    <div class="topnav">
+      <ul>
+        <p onclick="window.location.href='index.html';" style="text-align:left" class="btn"><img src="logo.png"
+            id="logo" alt="logo1" style="width:25%; height: 25%"></p>
+      </ul>
+      <a href="contact.html">Contact Us</a>
+      <a href="shellstation.html">Shell Station</a>
+      <a class="active" href="index.html">Home</a>
+    </div>
+    <img class="imagecenter" src="inshell1.png" style="width:40%" />
+    <h2 class="totalscore">Total Score:</h2>
+    <h2 id="totalScore">0</h2>
+    
+      <br>
+      <br>
+      <h2 style="text-align:center"><label for="usePoint">What is your goal today?</label>
+        <input type="letters" id="goalstatement1" placeholder = "Type here" name="goalstatement1">
+      </h2>
+    <br>
+      <button id="subs1" onclick="submitIt1()">Submit</button>
+ 
+    <br>
+    <br>
+      <h2 style="text-align: center"><label for="usePoint">How many points would you like to use?</label>
+        <input type="number" id="pointsUsed" name="pointsUsed" placeholder = "Type here" min=0 max=totalScore>
+      </h2>
+   
+    <br>
+    <button id="submit" onclick="subtractPoints()">Submit</button>
+
+      <br>
+    <br>
+    <br>
+    <div class="random">
+ <button id="buttonss">Need Ideas?</button>
+    <p style="text-align: center" id=message></p>
+       <br>
+    </div>
+    <div id="canvas" class="container group">
+      <div id="primaryContent" class="group">
+          <h1 class="timer" id="time">0:00</h1>
+          <button id="starts" onclick="startTimer1()">Start</button>
+    <br>
+            <button id="stops" onclick="stopTimer()">Stop</button>
+          <br>
+            <button id="resumes" onclick="resumeTimer()">Resume</button>
+          <br>
+            <button id="resets" onclick="resetTimer()">Reset</button>
+          <br>
+        </div>
+        <img class="imagecenter" src="fishpuns.png" style="width:50%"/>
+        <img class="imagecenter" src="fishpuns1.png" style="width:50%"/>
+      <p onclick="window.location.href= 'shellstation.html';"><button style="float: left; margin-left: 20px; padding-bottom: 20px;" class="button">Go Back</button></p>
+        <script src="script.js"></script>
+
+</body>
+
+</html>
